@@ -2,12 +2,14 @@ package edu.illinois.seclab.appsurvey;
 
 public class Preferences {
 
+	/** Server response when successfully read the sent data. */
 	public static final String SERVER_SUCCESS_RESPONSE = "OK";
+	/** Prefix for all Post IDs sent. */
 	public static final String PREFIX = "appsurvey";
+	/** Keystore password */
 	public static final String TRUSTSTORE_PASSWORD = "";
-	public static boolean acceptedPolicy = false;
-	public static String userId = "";
 	
+	/** The Application Policy. User must consent before sending any data to the server. */
 	public static CharSequence policyTxt = "You	are	invited	to participate in a research study examining the use of	application " +
 			"information to profile users. By clicking on “Agree” you consent to this application’s	" +
 			"collection	of	a	list	of	the	applications	and	packages	installed	on	your	phone.	This " +
@@ -25,19 +27,16 @@ public class Preferences {
 			"take	part in	the	study	and agree to	have	the	list	of	installed	packages	and	" +
 			"applications	on	your	phone	sent	to	the	research	team at the University of Illinois at Urbana-Champaign.";
 	
-	public static CharSequence policyTxt2 = "I have	read and understand	the	above consent form,	I	certify	that	I	am	18	years	old " +
-			"or	older,	and	by	clicking	the	agree	button I	indicate	my	willingness	to	voluntarily	" +
-			"take	part in	the	study	and agree to	have	the	list	of	installed	packages	and	" +
-			"applications	on	your	phone	sent	to	the	research	team at the University of Illinois at Urbana-Champaign.";
-	
-	
+	/** Server URL */
 	public static String server_url = "https://siebl-4309a-03.cs.illinois.edu/scea/mhandler.php";
-	//public static String server_url = "https://seclab.illinois.edu/android/scea/handler.php";
-	//public static String server_url = "https://seclab.illinois.edu/test.php";
-	//public static String server_url = "http://www.reliply.org/tools/requestheaders.php"; //test
-	//public static String server_url = "https://google.com"; //test
 	
+	/** Boolean indicating whether the user has accepted the policy. This mirrors the value in SharedPreferences.*/
+	public static boolean acceptedPolicy = false;
+	/** The randomly generated User ID. */
+	public static String userId = "";
+	/** Boolean indicating whether the data has been successfully sent to the server. */
 	public static boolean dataWritten = false;
+	/** Device User Agent. <i>Currently not used.</i> */
 	public static String userAgent = "";
 
 }

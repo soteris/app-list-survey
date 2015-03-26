@@ -27,9 +27,22 @@ public class UserSettings extends Activity{
         TextView textView = (TextView) findViewById(R.id.settings_policy);
         textView.setText(Html.fromHtml(Utils.getPolicy()));
         
-        RadioButton radioButtonAccept = (RadioButton) findViewById(R.id.radio_accept);
+        checkConsentButton();
+    }
+	
+	/**************************************************************************************************************************/
+	/**************************************************************************************************************************/
+	/****************************************          RADIO BUTTONS    *******************************************************/
+	/**************************************************************************************************************************/
+	/**
+	 * Checks the previous user selection on the policy.
+	 */
+	private void checkConsentButton() {
+		// TODO Auto-generated method stub
+		RadioButton radioButtonAccept = (RadioButton) findViewById(R.id.radio_accept);
         RadioButton radioButtonReject = (RadioButton) findViewById(R.id.radio_reject);
         
+        // Make radio buttons sticky. Show previous selection.
         if(Preferences.acceptedPolicy){
         	radioButtonAccept.setChecked(true);
         	radioButtonReject.setChecked(false);
@@ -38,8 +51,12 @@ public class UserSettings extends Activity{
         	radioButtonReject.setChecked(true);
         	radioButtonAccept.setChecked(false);
         }
-    }
-	
+	}
+
+	/**
+	 * Store user's selection w.r.t. <b>Agree</b> or <b>Decline</b> on the policy.
+	 * @param view
+	 */
 	public void onRadioButtonClicked(View view) {
 	    // Is the button now checked?
 	    boolean checked = ((RadioButton) view).isChecked();
