@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="policyConsent">
+        <item name="0">Do NOT agree</item>
+        <item name="1">Agree</item>
+    </string-array>
+</resources>

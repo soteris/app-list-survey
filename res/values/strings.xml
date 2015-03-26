@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AppSurvey</string>
+    <string name="title_activity_apk_list">Application</string>
+    <string name="title_activity_settings">Settings</string>
+    
+    <string name="hello_world">Hello world!</string>
+    <string name="uid_label">User ID: </string>
+    <string name="listLbl">List of Apps</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="apkname">Apk Name: </string>
+    <string name="package_name">Package Name: </string>
+    <string name="version">Version: </string>
+    <string name="features">Features: </string>
+    <string name="permissions">Permissions: </string>
+    <string name="path_info">Path info: </string>
+    <string name="req_version">Req Version: </string>
+    <string name="installed">Installed on: </string>
+    <string name="modified">Modified on: </string>
+    
+    <string name="pol_lbl">Policy</string>
+    <string name="reject">Decline</string>
+    <string name="accept">Agree</string>
+    
+    
+</resources>

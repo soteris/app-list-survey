@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <TextView
+        android:id="@+id/pol_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:textColor="#6599E6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10pt"
+        android:text="@string/pol_lbl" />
+    
+    <ScrollView
+        android:id="@+id/sv_settings_policy"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/pol_lbl"
+        android:layout_marginTop="10pt"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt" 
+        android:layout_marginBottom="30pt">
+
+    <TextView
+        android:id="@+id/settings_policy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#6599E6"
+        android:textSize="7pt" 
+        />
+    </ScrollView>
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10pt"
+        android:layout_marginLeft="10pt"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_reject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/reject"
+            android:textColor="#6599E6" />
+
+        <RadioButton
+            android:id="@+id/radio_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/accept"
+            android:textColor="#6599E6" />
+    </RadioGroup>
+
+</RelativeLayout>
