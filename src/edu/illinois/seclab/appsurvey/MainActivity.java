@@ -420,8 +420,8 @@ public class MainActivity extends ActionBarActivity {
 		/**************************************************************************************************************************/
 		
 		/**
-		 * Gets the list of installed apps from the device. It filters out the system apps.
-		 * @return A list of installed third-party user apps.
+		 * Gets the list of installed apps from the device. It does not filter out the system apps.
+		 * @return A list of installed apps.
 		 */
 		private List<PackageInfo> getAppList() {
 			packageManager = MainActivity.ctx.getPackageManager();
@@ -431,10 +431,10 @@ public class MainActivity extends ActionBarActivity {
 			
 			/*To filter out System apps*/
 			for(PackageInfo pi : packageList) {
-				boolean b = Utils.isSystemPackage(pi);
-				if(!b) {
+				//boolean b = Utils.isSystemPackage(pi);
+				//if(!b) {
 					packageList1.add(pi);
-				}
+				//}
 			}
 			
 			return packageList1;

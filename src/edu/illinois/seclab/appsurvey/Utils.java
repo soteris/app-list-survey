@@ -142,10 +142,15 @@ public class Utils {
 		//      BUILT THE RESULT STRING         //
 		String result = version + ":";
 		
-		for(String permission : permissions){
-			result += permission + "+";
+		if(permissions != null && permissions.length > 1){
+			for(String permission : permissions){
+				result += permission + "+";
+			}
+			result = result.substring(0, result.length() - 1);
 		}
-		result = result.substring(0, result.length() - 1);
+		else{
+			result += " ";
+		}
 		
 		result += ":" + firstInstallTime + ":" + lastUpdateTime + ":" + flags + ":" + uid + ":" + market;
 		
