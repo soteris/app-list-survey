@@ -3,11 +3,11 @@ package edu.illinois.seclab.appsurvey;
 public class Preferences {
 
 	/** Server response when successfully read the sent data. */
-	public static final String SERVER_SUCCESS_RESPONSE = "OK";
+	public static final String SERVER_SUCCESS_RESPONSE = "xx";
 	/** Prefix for all Post IDs sent. */
-	public static final String PREFIX = "appsurvey";
+	public static final String PREFIX = "xx";
 	/** Keystore password */
-	public static final String TRUSTSTORE_PASSWORD = "";
+	public static final String TRUSTSTORE_PASSWORD = "xx";
 	
 	/** The Application Policy. User must consent before sending any data to the server. */
 	public static CharSequence policyTxt = "You	are	invited	to participate in a research study examining the use of	application " +
