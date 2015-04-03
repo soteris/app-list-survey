@@ -28,7 +28,7 @@ public class Preferences {
 			"applications	on	your	phone	sent	to	the	research	team at the University of Illinois at Urbana-Champaign.";
 	
 	/** Server URL */
-	public static String server_url = "https://siebl-4309a-03.cs.illinois.edu/scea/mhandler.php";
+	public static String server_url = "xx";
 	
 	/** Boolean indicating whether the user has accepted the policy. This mirrors the value in SharedPreferences.*/
 	public static boolean acceptedPolicy = false;
