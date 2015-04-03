@@ -66,10 +66,10 @@ public class MainActivity extends ActionBarActivity {
 	            		Utils.alert("App completed successfully! You may now uninstall the app if you wish.", ctx);
 	            		break;
 	            	case Client.DATA_SENT_ERROR:
-	            		Utils.alert("App completed successfully! You may now uninstall the app if you wish.", ctx);
+	            		Utils.alert("Error sending data!", ctx);
 	            		break;
 	            	case Client.SERVER_CONNECT_ERROR:
-	            		Utils.alert("App completed successfully! You may now uninstall the app if you wish.", ctx);
+	            		Utils.alert("Error connecting to the server!", ctx);
 	            		break;
 	            	default:
 	            }
